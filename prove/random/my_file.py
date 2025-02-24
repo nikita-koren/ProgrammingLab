@@ -11,3 +11,13 @@ for line in my_file:
     print(line)
 # Chiudo il file
 my_file.close()
+
+my_file = open('shampoo_sales.txt', 'r')
+my_file_contents = my_file.read()
+print(my_file_contents)
+my_file.close()
+
+my_file = open('shampoo_sales.csv', 'r')
+for line in my_file:
+    print(line)
+my_file.close()
